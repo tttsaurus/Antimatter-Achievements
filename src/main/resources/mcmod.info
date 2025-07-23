@@ -1,0 +1,12 @@
+[{
+    "modid": "${modid}",
+    "name": "${modname}",
+    "description": "[Antimatter Dimensions]-style achievement system",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "logoFile": "",
+    "url": "",
+    "authorList": ["tttsaurus"],
+    "credits": "",
+    "dependencies": []
+}]
