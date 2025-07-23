@@ -39,5 +39,6 @@
  */
 dependencies {
 
+    // ingameinfo latest action
     devOnlyNonPublishable(rfg.deobf(project.files("libs/ingameinfo-1.2.1.jar")))
 }
