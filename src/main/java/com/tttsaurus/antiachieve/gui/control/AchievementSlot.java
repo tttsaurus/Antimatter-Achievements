@@ -178,6 +178,7 @@ public class AchievementSlot extends Interactable
         }
     }
 
+    //
     @Override
     public void onRenderUpdate(RenderOpQueue queue, boolean focused)
     {
