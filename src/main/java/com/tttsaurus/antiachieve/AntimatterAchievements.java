@@ -35,8 +35,6 @@ public class AntimatterAchievements
     @SubscribeEvent
     public void onIgiRuntimeEntryPoint(IgiRuntimeEntryPointEvent event)
     {
-        event.runtime.initPhase
-                .registerMvvm("achievement_page", AchievementPageViewModel.class)
-                .openGuiOnStartup("achievement_page");
+        event.runtime.initPhase.registerMvvm("achievement_page", AchievementPageViewModel.class);
     }
 }
