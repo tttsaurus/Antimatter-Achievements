@@ -14,7 +14,8 @@ import org.apache.logging.log4j.Logger;
 @Mod(modid = Tags.MODID,
         version = Tags.VERSION,
         name = Tags.MODNAME,
-        acceptedMinecraftVersions = "[1.12.2]")
+        acceptedMinecraftVersions = "[1.12.2]",
+        dependencies = "required-after:ingameinfo")
 public class AntimatterAchievements
 {
     public static final Logger LOGGER = LogManager.getLogger(Tags.MODNAME);
