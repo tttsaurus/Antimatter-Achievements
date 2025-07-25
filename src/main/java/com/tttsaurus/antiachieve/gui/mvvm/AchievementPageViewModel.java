@@ -1,5 +1,6 @@
 package com.tttsaurus.antiachieve.gui.mvvm;
 
+import com.tttsaurus.antiachieve.AntimatterAchievements;
 import com.tttsaurus.antiachieve.gui.AchievementGuiConstant;
 import com.tttsaurus.ingameinfo.common.core.mvvm.binding.Reactive;
 import com.tttsaurus.ingameinfo.common.core.mvvm.binding.ReactiveObject;
@@ -29,5 +30,17 @@ public class AchievementPageViewModel extends ViewModel<AchievementPageView>
     public void onFixedUpdate(double v)
     {
 
+    }
+
+    @Override
+    public void onGuiOpen()
+    {
+        AntimatterAchievements.LOGGER.info("Achievement Page Opened");
+    }
+
+    @Override
+    public void onGuiClose()
+    {
+        AntimatterAchievements.LOGGER.info("Achievement Page Closed");
     }
 }

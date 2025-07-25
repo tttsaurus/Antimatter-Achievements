@@ -25,7 +25,7 @@ public class GuiInventoryMixin
         float width = 20;
         float height = 18;
 
-        if ((new Rect(x, y, width, height)).contains(mouseX, mouseY))
+        if ((new Rect(x, y, width, height)).contains(mouseX, mouseY) && !IgiRuntimeLocator.get().livePhase.isGuiOpen("achievement_page"))
         {
             RenderUtils.renderImagePrefab(x, y, width, height, GuiResources.get("vanilla_button"));
             RenderUtils.renderRectBrightnessOverlay(x, y, width, height, 0.07843137f, 0.11372548f, 0.3333333f);
